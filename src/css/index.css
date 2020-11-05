@@ -91,13 +91,14 @@ li:hover {
   background-color: var(--main-blue);
 }
 .hero__content {
-  width: 70%;
+  width: 100%;
+  padding: 0 5rem;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(2, 1fr);
 }
 .hero__content--text h1 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   color: var(--ghost-white);
 }
 .hero__content--text p {
@@ -124,14 +125,27 @@ li:hover {
   padding: 30px;
   /* position: relative; */
 }
-.category__title {
-  margin: 2rem;
-  display: grid;
-  place-items: center;
-  /* font-family: "Poiret One", cursive; */
+.category__header {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.category__header--title {
+  margin: 2rem 0;
   font-size: 2.4rem;
   font-weight: bold;
   color: var(--dark-blue);
+}
+.category__header--button {
+  margin: 1rem 10rem;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--orange);
+  color: var(--ghost-white);
 }
 
 .carousel__new__container {
@@ -159,12 +173,16 @@ li:hover {
   margin: 1rem;
   font-size: 1.2rem;
 }
-.carousel__new--item__details--title {
+.carousel__new--item__details--name {
   font-weight: bold;
   color: var(--orange);
 }
-.carousel__new--item__details--subtitle {
+.carousel__new--item__details--position {
   font-weight: 300;
+}
+.carousel__new--item__details--company {
+  font-weight: bold;
+  /* color: var(--dark-blue); */
 }
 
 .carousel__new--item:hover ~ .carousel__new--item {
