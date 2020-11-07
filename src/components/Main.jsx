@@ -12,7 +12,7 @@ function Main() {
           <div className="carousel__new--item">
             <img
               className="carousel-item__img"
-              src="https://source.unsplash.com/random?profile"
+              src="https://source.unsplash.com/random?profile-photo"
               alt=""
             />
             <div className="carousel__new--item__details">

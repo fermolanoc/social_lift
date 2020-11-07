@@ -18,7 +18,7 @@ function Footer() {
                     <button type="submit">Send message</button>
                 </form>
             </div>
-            <div className="footer__content__sidemap">
+            <div className="footer__content__sitemap">
             <h2>Sitemap</h2>
                 <p>All our pages</p>
                 <div className="footer__content__sitemap--list">
