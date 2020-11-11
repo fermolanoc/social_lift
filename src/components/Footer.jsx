@@ -15,7 +15,7 @@ function Footer() {
                     <input type="email" name="email" id="email" autoComplete="email" required/>
                     <label htmlFor="message">Your Message</label>
                     <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                    <button type="submit">Send message</button>
+                    <button type="submit" className="button">Send message</button>
                 </form>
             </div>
             <div className="footer__content__sitemap">

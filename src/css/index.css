@@ -26,6 +26,20 @@ code {
     monospace;
 }
 
+.button {
+  display: inline-block;
+  padding: 0 3rem;
+  width: fit-content;
+  height: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--orange);
+  color: var(--ghost-white);
+  text-align: center;
+}
+
 /* HEADER */
 header {
   display: grid;
@@ -158,8 +172,6 @@ nav li:hover {
 }
 .about-us__content--button {
   margin: 1rem auto;
-  width: 15rem;
-  text-align: center;
 }
 
 hr {
@@ -186,17 +198,10 @@ hr {
   font-weight: bold;
   color: var(--dark-blue);
 }
-.category__header--button,
-button {
-  margin: 1rem 10rem;
-  width: 15rem;
-  height: 3rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--orange);
-  color: var(--ghost-white);
+.category__header--button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
 }
 
 .carousel__new__container {
@@ -350,12 +355,6 @@ textarea {
 }
 .footer__content__message--form button {
   margin: 0 auto;
-  width: auto;
-  height: auto;
-  padding: 0.5rem 1rem;
-  color: var(--ghost-white);
-  background-color: var(--orange);
-  border: none;
 }
 
 .footer__content__sitemap h2 {
@@ -551,6 +550,13 @@ textarea {
     margin-top: 1rem;
   }
 
+  .category__header {
+    display: block;
+  }
+  .category__header--button {
+    display: block;
+    margin: 1rem 0;
+  }
   .footer__content {
     width: 100%;
     padding: 0 1rem;
