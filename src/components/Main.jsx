@@ -1,10 +1,10 @@
 import React from "react";
-import employees from "../employees"
-import Entry from './Entry';
+import employees from "../employees";
+import Entry from "./Entry";
 
 function createEmployee(employee) {
   return (
-    <Entry 
+    <Entry
       key={employee.id}
       image={employee.profile_image}
       name={employee.employee_name}
@@ -15,7 +15,6 @@ function createEmployee(employee) {
   );
 }
 
-
 function Main() {
   return (
     <main>
@@ -23,35 +22,32 @@ function Main() {
         <div className="about-us__container">
           <div className="about-us__img">
             <picture>
-              <img src="https://source.unsplash.com/random?workteam" alt="" />
+              <img src="https://source.unsplash.com/random?teamwork" alt="" />
             </picture>
           </div>
           <div className="about-us__content">
-            <div className="about-us__content--title">What we do...</div>
+            <div className="about-us__content--title">Did you know?</div>
             <div className="about-us__content--description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-              unde tempora ad. Voluptas numquam veniam eius ducimus repellendus
-              earum distinctio, sit consequatur nostrum laboriosam soluta!
-              Similique itaque accusamus ut molestias.<br></br> Facere repellat
-              quia aliquam quisquam distinctio reprehenderit quae mollitia ab id
-              ullam magni fuga voluptatem tenetur tempore, amet suscipit odio?
-              Reprehenderit dolor tempore distinctio corporis deleniti magnam
-              suscipit ipsum quibusdam! Neque suscipit laborum rerum, nemo
-              adipisci dolore magni. Nostrum porro quibusdam debitis expedita
-              odio deleniti fugiat atque nihil sed nisi facilis veritatis fuga
-              incidunt aspernatur cumque sunt laboriosam, culpa illo! Odit
-              cumque aperiam, quis autem facere iusto eveniet voluptates
-              repellendus ad, inventore reprehenderit laboriosam optio, aliquam
-              similique eos aspernatur a id minima beatae quos. <br></br>
-              Nostrum, nobis? Enim numquam nisi cupiditate! Consectetur quisquam
-              maiores doloremque illum error deleniti reiciendis! Earum optio,
-              amet sit itaque velit ipsa laborum esse voluptatum culpa vero
-              deserunt accusamus illum non. Eos, consequatur consequuntur!
-              Doloremque, similique omnis.
+              <li>
+                <strong>63 percent</strong> of employees are so frustrated by
+                the way their company communicates with them that they are ready
+                to quit.
+              </li>
+              <li>
+                <strong>65 percent</strong> of respondents said that HR
+                technology is inadequate or only fair at achieving its overall
+                objectives.
+              </li>
+              <li>
+                Employees who feel their voice is heard at work are{" "}
+                <strong>4.6 times</strong> more likely to feel empowered to
+                perform their best work.
+              </li>
             </div>
             <div>
+              <p className="pain-message"><strong>Don't waste valuable time and resources.</strong></p>
               <button className="about-us__content--button button">
-                Read more...
+                Contact us now!
               </button>
             </div>
           </div>
@@ -69,9 +65,7 @@ function Main() {
           </button>
         </div>
         <div className="carousel__new__container">
-          
           {employees.data.map(createEmployee)}
-          
         </div>
       </section>
     </main>

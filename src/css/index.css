@@ -102,9 +102,9 @@ nav li:hover {
   background-color: var(--main-blue);
 }
 .hero__content {
-  width: 80%;
+  width: 90%;
   margin: auto;
-  padding-left: 10rem;
+  padding-left: 8rem;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -153,10 +153,12 @@ nav li:hover {
   grid-template-columns: minmax(150px, 20%) minmax(550px, 80%);
   gap: 5rem;
 }
+
 .about-us__img picture img {
-  width: 26rem;
+  width: 25rem;
   height: 28rem;
   border-radius: 10%;
+  object-fit: cover;
 }
 .about-us__content div {
   margin: 2rem;
@@ -165,17 +167,23 @@ nav li:hover {
   font-size: 2.4rem;
   font-weight: bold;
 }
-.about-us__content--description {
+.about-us__content--description,
+.pain-message {
   font-size: 1.2rem;
   font-weight: 500;
   text-align: justify;
+}
+.about-us__content--description li {
+  padding-left: 3rem;
+  line-height: 2.5rem;
+  list-style: square;
 }
 .about-us__content--button {
   margin: 1rem auto;
 }
 
 hr {
-  width: 80%;
+  width: 95%;
   margin: 3rem auto 2rem;
   border: 1px solid var(--gray);
 }
@@ -397,12 +405,13 @@ textarea {
 
 .copyright {
   width: 100%;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   font-weight: 300;
-  position: fixed;
+  /* position: fixed; */
   bottom: 5px;
 }
 .copyright b {
@@ -588,3 +597,5 @@ textarea {
     margin: 0 2rem;
   }
 }
+
+/* START ADDING COMMENTS TO THE WHOLE PROJECT */
