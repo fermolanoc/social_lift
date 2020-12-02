@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import '../css/Header.css';
+import '../css/media.css';
 
 function Header() {
   return (
@@ -7,9 +10,9 @@ function Header() {
         <div className="header__container--logo">Social Lift</div>
         <nav>
           <ul>
-            <li>
-              <a href="http://localhost:3000/">Home</a>
-            </li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
             <li>About Us</li>
             <li>Features</li>
             <li>Pricing</li>

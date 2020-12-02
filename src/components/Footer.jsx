@@ -41,7 +41,7 @@ function Footer() {
             </div>
             </div>
         </div>
-      <p className="copyright">Copyright ⓒ {year} All Rights Reserved | <b> Social Lift</b></p>
+      <p className="copyright">Copyright ⓒ {year} All Rights Reserved | <b> Social Lift </b>| Designed by Dinky Studio</p>
     </footer>
   );
 }
