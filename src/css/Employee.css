@@ -1,0 +1,75 @@
+@import "./index.css";
+
+.container {
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  margin: 2rem 5rem;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+  border-radius: 15px;
+  background-color: white;
+}
+.employee--detail {
+  padding: 5rem 10rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.list__container {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.list__container .item__img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  opacity: 1;
+}
+.list__container .item__img:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+.item__details p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+.item__details--name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+/* Rating area */
+.container--rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* align-items: flex-start; */
+}
+.container--rating h2 {
+  margin: 2rem auto;
+  font-size: 1.8rem;
+}
+.container--rating input {
+  margin-bottom: 1.5rem;
+}
+.container--rating button {
+  /* width: 50%; */
+  height: auto;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  line-height: 1.9rem;
+  color: var(--just-white);
+  background-color: var(--orange);
+}

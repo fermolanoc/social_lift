@@ -1,0 +1,46 @@
+@import "./index.css";
+
+.create__employee {
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  width: 95%;
+  height: auto;
+  margin: 1rem auto;
+  padding: 5rem 5rem;
+  border-radius: 25px;
+  background-color: var(--just-white);
+}
+
+.create__employee h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--orange);
+  margin-bottom: 2rem;
+}
+
+.create__employee form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.create__employee form input:not(#image) {
+  height: 3rem;
+  margin-bottom: 1rem;
+  background-color: var(--ghost-white);
+  box-shadow: 1px 1px 4px var(--gray);
+  border: none;
+  border-radius: 10px;
+  caret-color: var(--orange);
+}
+.create__employee form input:focus {
+  outline: none;
+}
+.create__employee form label {
+  padding-bottom: 0.2rem;
+}
+.create__employee form input {
+  padding-left: 1rem;
+}
