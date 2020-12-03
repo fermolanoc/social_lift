@@ -26,57 +26,18 @@ code {
     monospace;
 }
 
-/* HEADER */
-header {
-  display: grid;
-  /* justify-content: center;
-  align-items: center; */
-  place-items: center;
-  background-color: var(--main-blue);
-  width: 100%;
-  height: 100px;
-}
-
-.header__container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 1rem 0;
-  display: grid;
-  /* justify-content: center;
-  align-items: center; */
-  place-items: center;
-  grid-template-columns: minmax(150px, 30%) 1fr;
-  text-align: center;
-}
-.header__container--logo {
-  /* margin: auto; */
-  /* padding-left: 10rem; */
-  font-size: 2rem;
-  font-family: "Merienda One", cursive;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: var(--orange);
-}
-header nav {
-  text-align: end;
-}
-header nav li {
+.button {
   display: inline-block;
-  margin-left: 1rem;
-  padding: 1rem;
-  text-align: center;
+  padding: 0 3rem;
+  width: fit-content;
+  height: 3rem;
   font-size: 1.4rem;
-  text-decoration: none;
-  list-style: none;
-  color: var(--ghost-white);
-}
-header nav li a,
-nav li:hover {
-  padding: 1rem;
+  font-weight: bold;
+  border: none;
   border-radius: 5px;
-  text-decoration: none;
-  background-color: var(--ghost-white);
-  color: var(--main-blue);
+  background-color: var(--orange);
+  color: var(--ghost-white);
+  text-align: center;
 }
 
 /* HERO */
@@ -89,12 +50,11 @@ nav li:hover {
 }
 .hero__content {
   width: 80%;
-  margin: auto;
-  padding-left: 10rem;
+  margin: 0 auto;
+  padding-left: 5rem;
   display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: minmax(300px, 60%) 1fr;
+  place-items: center;
+  grid-template-columns: minmax(300px, 50%) 1fr;
 }
 .hero__content--text h1 {
   font-size: 3.2rem;
@@ -139,10 +99,12 @@ nav li:hover {
   grid-template-columns: minmax(150px, 20%) minmax(550px, 80%);
   gap: 5rem;
 }
+
 .about-us__img picture img {
-  width: 26rem;
+  width: 25rem;
   height: 28rem;
   border-radius: 10%;
+  object-fit: cover;
 }
 .about-us__content div {
   margin: 2rem;
@@ -151,19 +113,23 @@ nav li:hover {
   font-size: 2.4rem;
   font-weight: bold;
 }
-.about-us__content--description {
+.about-us__content--description,
+.pain-message {
   font-size: 1.2rem;
   font-weight: 500;
   text-align: justify;
 }
+.about-us__content--description li {
+  padding-left: 3rem;
+  line-height: 2.5rem;
+  list-style: square;
+}
 .about-us__content--button {
   margin: 1rem auto;
-  width: 15rem;
-  text-align: center;
 }
 
 hr {
-  width: 80%;
+  width: 95%;
   margin: 3rem auto 2rem;
   border: 1px solid var(--gray);
 }
@@ -186,17 +152,14 @@ hr {
   font-weight: bold;
   color: var(--dark-blue);
 }
-.category__header--button,
-button {
-  margin: 1rem 10rem;
-  width: 15rem;
-  height: 3rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--orange);
-  color: var(--ghost-white);
+.category__header--button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .carousel__new__container {
@@ -289,6 +252,65 @@ button {
   color: orange;
 }
 
+/* CLIENTS */
+.clients {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+  padding: 5rem 0;
+  background-color: var(--main-blue);
+}
+.clients__container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--ghost-white);
+}
+.clients__container h2 {
+  margin-bottom: 0.2rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.clients__container p {
+  font-size: 1.2rem;
+  color: #c4c4c4;
+}
+.clients__logo__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 2rem;
+  gap: 2rem;
+}
+.clients__logo__container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--just-white);
+  opacity: 0.7;
+  width: 100px;
+  height: 80px;
+  border-radius: 15px;
+  color: var(--orange);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.clients__logo__container .logo:hover {
+  width: 120px;
+  height: 100px;
+  opacity: 1;
+  transition: 250ms;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
 /* FOOTER */
 footer {
   display: grid;
@@ -350,12 +372,6 @@ textarea {
 }
 .footer__content__message--form button {
   margin: 0 auto;
-  width: auto;
-  height: auto;
-  padding: 0.5rem 1rem;
-  color: var(--ghost-white);
-  background-color: var(--orange);
-  border: none;
 }
 
 .footer__content__sitemap h2 {
@@ -398,187 +414,15 @@ textarea {
 
 .copyright {
   width: 100%;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   font-weight: 300;
-  position: fixed;
+  /* position: fixed; */
   bottom: 5px;
 }
 .copyright b {
-  margin-left: 0.3rem;
-}
-
-/* Media Queries */
-@media only screen and (max-width: 987px) {
-  .about-us__img {
-    display: none;
-  }
-  .about-us__container {
-    display: flex;
-    padding: 2rem;
-  }
-
-  /* Footer */
-  .footer__content {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-  .footer__content__message {
-    flex: 1 1 40%;
-    margin: 5px;
-    text-align: left;
-  }
-  .footer__content__message h2,
-  .footer__content__message p {
-    text-align: center;
-  }
-  .footer__content__sitemap {
-    flex: 1 1 35%;
-    margin: 0.5rem;
-    text-align: center;
-  }
-  .footer__content__sitemap--list li {
-    margin-bottom: 2.5rem;
-    list-style: none;
-    text-decoration: none;
-  }
-  .footer__content__contact {
-    flex: 0 1 100%;
-    margin: 3rem auto;
-  }
-  .footer__content__contact__details {
-    width: 100%;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__content__contact__details div {
-    width: 33%;
-    margin: 0 5rem;
-  }
-  .copyright {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  /* Header */
-  .header__container {
-    width: 100%;
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  header nav {
-    text-align: center;
-  }
-
-  .about-us__container {
-    width: 90%;
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .about-us__img {
-    display: none;
-  }
-
-  footer {
-    width: 100%;
-    padding: 1rem;
-  }
-  .footer__content {
-    width: 100%;
-    margin: 1rem auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .footer__content__message,
-  .footer__content__sitemap,
-  .footer__content__contact {
-    width: 100%;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .footer__content__sitemap--list li,
-  .footer__content__contact {
-    display: inline-block;
-    margin: 1rem 2rem;
-  }
-  .footer__content__contact {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .footer__content__contact__details {
-    display: grid;
-    place-items: center;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .hero {
-    display: grid;
-    place-items: center;
-    height: auto;
-    text-align: center;
-  }
-  .hero__content {
-    margin: 2rem auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero__content--text {
-    order: 1;
-    margin-top: 1rem;
-  }
-
-  .footer__content {
-    width: 100%;
-    padding: 0 1rem;
-    left: 50%;
-    right: 50%;
-    display: block;
-  }
-  .footer__content__message {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  .footer__content__sitemap {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  .footer__content__sitemap ul li {
-    display: inline-block;
-    margin: 0 1rem;
-  }
-  .footer__content__contact__details {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 5rem;
-  }
-  .footer__content__contact__details div {
-    margin: 0 2rem;
-  }
+  margin: 0 0.3rem;
 }
