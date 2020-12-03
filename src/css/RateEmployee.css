@@ -3,11 +3,11 @@
 /* RateEmployee Page */
 .filter {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 5rem;
   justify-content: space-evenly;
   align-items: center;
 }
-.filter label,
 .filter label {
   margin-right: 1rem;
   margin-left: 3rem;

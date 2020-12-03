@@ -7,7 +7,7 @@ function Header() {
   return (
     <header>
       <div className="header__container">
-        <div className="header__container--logo">Social Lift</div>
+        <div className="header__container--logo"><a href="/">Social Lift</a></div>
         <nav>
           <ul>
             <Link to="/">

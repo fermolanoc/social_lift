@@ -118,6 +118,24 @@
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  /* RateEmployee Page */
+  .filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+    /* place-items: center; */
+  }
+  .filter__option {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter__option label {
+    width: 35%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -184,5 +202,49 @@
   }
   .footer__content__contact__details div {
     margin: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* Footer */
+  footer {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+  .footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__content__message,
+  .footer__content__sitemap,
+  .footer__content__contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content__contact {
+    margin: 0;
+  }
+  .footer__content__contact__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .footer__content__contact__details span {
+    display: none;
+  }
+  .footer__content__contact--phone,
+  .footer__content__contact--email,
+  .footer__content__contact--address {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
   }
 }

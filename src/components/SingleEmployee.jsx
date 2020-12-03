@@ -2,13 +2,13 @@ import React from "react";
 
 function SingleEmployee(props) {
   return (
-    <div className="list__container">
+    <div className="list__container employee--container">
             <img
               className="item__img"
               src={props.image}
               alt=""
             />
-            <div className="item__details">
+            <div className="details">
               <p className="item__details--name">
                 {props.name}
               </p>
