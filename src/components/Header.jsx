@@ -10,7 +10,7 @@ function Header() {
         <div className="header__container--logo"><a href="/">Social Lift</a></div>
         <nav>
           <ul>
-            <Link to="/">
+            <Link to="/social_lift">
               <li>Home</li>
             </Link>
             <li>About Us</li>
