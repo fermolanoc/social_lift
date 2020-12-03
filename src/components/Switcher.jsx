@@ -9,7 +9,7 @@ import Employee from '../components/Employee';
 const Switcher = () => {
     return (
         <Switch>
-            <Route exact path='/' component={Home}></Route>
+            <Route exact path='/social_lift' component={Home}></Route>
             <Route exact path='/AddEmployee' component={AddEmployee}></Route>
             <Route exact path='/RateEmployee' component={RateEmployee}></Route>
             <Route exact path='/Employee' component={Employee}></Route>
