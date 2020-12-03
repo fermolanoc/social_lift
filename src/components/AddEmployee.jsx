@@ -20,7 +20,7 @@ function AddEmployee() {
               <input type="number" inputMode="numeric" name="age" id="age" required/>
               <label htmlFor="image">Upload Image (Required)</label>
               <input type="file" name="image" id="image" required/>
-              
+              <button type="submit">Save employee</button>
           </form>
         </div>
     )

@@ -13,8 +13,8 @@
 }
 
 .create__employee h2 {
-  font-size: 2.4rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: normal;
   line-height: 1.8rem;
   color: var(--orange);
   margin-bottom: 2rem;
@@ -43,4 +43,14 @@
 }
 .create__employee form input {
   padding-left: 1rem;
+}
+.create__employee form button {
+  margin-top: 2rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  line-height: 1.9rem;
+  color: var(--just-white);
+  background-color: var(--orange);
 }
